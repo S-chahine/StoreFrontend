@@ -1,0 +1,93 @@
+.h1-login{
+    text-align: left;
+    margin-top: 150px;;
+    
+}
+.login-container {
+    display:block;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  .login-form,
+  .registration-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type='text'],
+  input[type='password'] {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width:250px;
+  }
+  input[type='email'] {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 300px; /* Adjust the width value as per your requirements */
+  }
+  button {
+    padding: 10px;
+    background-color: #df6f43;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .h1-color{
+    color: #bb3804;
+    text-align:left ;
+  }
+  
+  button[type='submit'] {
+    background-color: #df6f43;
+  }
+  
+  button[type='submit']:hover {
+    background-color: #de521b;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .success-message {
+    color: green;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .toggle {
+    align-items: center;
+    margin-top: 0px;
+    text-align: center;
+  }

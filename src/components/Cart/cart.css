@@ -1,0 +1,129 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+  }
+.h2{
+    margin-top: 200px;
+    margin-left: 300px;
+    margin-bottom: 0;
+
+    text-align: left;
+}
+.quantity{
+    width: 40px;
+}
+  .cart-item {
+    width: 1000px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5%;
+  }
+  
+  .cart-item img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  select{
+    width: 150px;
+  }
+  .cart-item-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .cart-item-title {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+  }
+  
+  .cart-item-price {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .cart-item-quantity {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .cart-item-size {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+   label {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        
+   }
+   .size-change {  
+    display: inline-block;
+   }
+  .cart-item-remove {
+    margin-left: auto;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cart-total-price {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .proceed-to-checkout-button {
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .proceed-to-checkout{
+    text-align:  right;
+  }
+  
+  .proceed-to-checkout-button:hover {
+    background-color: #45a049;
+    
+  }
+  .total-tax{
+    text-align: right;
+    font-size: medium;
+    font-weight: bold;
+  }
+  
+  .empty-cart-message {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #777;
+  }
+  .size-not-selected-message{
+    color: #f44336;
+    text-align: right;
+    font-size: medium;
+    font-weight: bold;
+  }
