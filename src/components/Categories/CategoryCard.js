@@ -21,7 +21,7 @@ const CategoryCard = () => {
 
   const fetchItemsByCategory = async (categoryId) => {
     try {
-      const response = await axios.get(`http://localhost:9000/api/products/${categoryId}`);
+      const response = await axios.get(`https://storebackend-etw3.onrender.com/api/products/${categoryId}`);
       setItems(response.data);
     } catch (error) {
       console.error('Error fetching items:', error);

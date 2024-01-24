@@ -26,17 +26,17 @@ function Navbar() {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.get(`http://localhost:9000/api/products?search=${searchQuery}`);
+      const response = await axios.get(`https://storebackend-etw3.onrender.com/api/products?search=${searchQuery}`);
       const searchData = response.data;
       setSearchResults(searchData);
-      
+
       // Navigate to the Items page with search results
       navigate('/search', { state: { searchResults: searchData } });
     } catch (error) {
       console.error('Error fetching search results:', error);
     }
   };
-  
+
   function handleLogout() {
     dispatch(logout());
     dispatch(clearCart());

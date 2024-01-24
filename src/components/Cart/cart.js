@@ -18,7 +18,7 @@ const CartPage = () => {
   };
 
   const handleUpdateItem = async (itemId, newSize) => {
-    const response = await axios.get(`http://localhost:9000/api/size_id/${itemId}/${newSize}`);
+    const response = await axios.get(`https://storebackend-etw3.onrender.com/api/size_id/${itemId}/${newSize}`);
     const newSizeId = response.data.product_size_id;
     dispatch(updateCartItem(itemId, newSizeId, newSize));
   };

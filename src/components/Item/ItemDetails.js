@@ -20,7 +20,7 @@ const ItemDetails = () => {
   useEffect(() => {
     const fetchProductData = async () => {
       try {
-        const response = await axios.get(`http://localhost:9000/api/shop/product/${productId}`);
+        const response = await axios.get(`https://storebackend-etw3.onrender.com/api/shop/product/${productId}`);
         const productData = response.data;
         setProductData(productData);
       } catch (error) {
@@ -55,9 +55,9 @@ const ItemDetails = () => {
       clearTimeout(timeoutId);
     };
   }, [isAddedToCart]);
-  
 
-  const handleAddToCart = async() => {
+
+  const handleAddToCart = async () => {
     // Check if size is selected
     if (selectedSize === '') {
       setMessage('Please select a size.');
@@ -83,7 +83,7 @@ const ItemDetails = () => {
       return;
     }
 
-    const response = await axios.get(`http://localhost:9000/api/size_id/${productId}/${selectedSize}`);
+    const response = await axios.get(`https://storebackend-etw3.onrender.com/api/size_id/${productId}/${selectedSize}`);
     const sizeId = response.data.product_size_id;
     //console.log(sizeId);
 
@@ -100,7 +100,7 @@ const ItemDetails = () => {
         availableSizes: productData.sizes.map((size) => size.size),
       })
     );
-  
+
     setIsAddedToCart(true); // Set isAddedToCart to true
     console.log({ isAddedToCart });
     setMessage(''); // Clear the error message
@@ -140,7 +140,7 @@ const ItemDetails = () => {
           <button onClick={handleAddToCart}>Add to Cart</button>
           {isAddedToCart && <p className="message-item success">Item added to cart successfully!</p>} {/* Show success message */}
           {message && <p className="message-item error">{message}</p>} {/* Show error message */}
-      
+
         </div>
       </div>
     </div>

@@ -30,7 +30,7 @@ const OrderItem = ({ order }) => {
       <p><strong>Order Total: </strong>${order_total}</p>
       <p><strong>Created At: </strong>{formattedCreatedAt}</p>
       <hr />
-      
+
       <h3>Order Items:</h3>
       {order_items && order_items.length > 0 ? (
         order_items.map((item) => (
@@ -55,7 +55,7 @@ const OrdersPage = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get(`http://localhost:9000/api/orders/${userId}`);
+        const response = await axios.get(`https://storebackend-etw3.onrender.com/api/orders/${userId}`);
         const ordersData = response.data;
 
         // Group order items by order ID

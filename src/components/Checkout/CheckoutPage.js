@@ -56,7 +56,7 @@ const CheckoutPage = () => {
     // Function to get the available quantity for a product size
     const getAvailableQuantity = async (productSizeId) => {
       try {
-        const response = await axios.get(`http://localhost:9000/api/product_size/${productSizeId}`);
+        const response = await axios.get(`https://storebackend-etw3.onrender.com/api/product_size/${productSizeId}`);
         return response.data.availableQuantity;
       } catch (error) {
         console.error('Error fetching available quantity:', error);
@@ -68,7 +68,7 @@ const CheckoutPage = () => {
     // Function to update the available quantity for a product size
     const updateAvailableQuantity = async (productSizeId, newQuantity) => {
       try {
-        await axios.put(`http://localhost:9000/api/product_size/${productSizeId}`, {
+        await axios.put(`https://storebackend-etw3.onrender.com/api/product_size/${productSizeId}`, {
           availableQuantity: newQuantity
         });
       } catch (error) {
@@ -104,7 +104,7 @@ const CheckoutPage = () => {
 
     try {
       // Send HTTP request to insert order details
-      const response = await axios.post('http://localhost:9000/api/orders', orderData);
+      const response = await axios.post('https://storebackend-etw3.onrender.com/api/orders', orderData);
 
       // Handle API response
       const orderId = response.data.orderId;
