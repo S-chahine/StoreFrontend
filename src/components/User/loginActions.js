@@ -11,7 +11,7 @@ export const UPDATE_PASSWORD_SUCCESS = 'UPDATE_PASSWORD_SUCCESS';
 export const UPDATE_PASSWORD_FAILURE = 'UPDATE_PASSWORD_FAILURE';
 export const EMAIL_UPDATED = 'EMAIL_UPDATED';
 export const PASSWORD_UPDATED = 'PASSWORD_UPDATED';
-export const UPDATE_USER_INFO = 'UPDATE_USER_INFO'; 
+export const UPDATE_USER_INFO = 'UPDATE_USER_INFO';
 
 // Action Creators
 export const loginRequest = () => ({
@@ -50,7 +50,7 @@ export const updatePasswordFailure = (error) => ({
   payload: error,
 });
 
-export const updateUserInfo = (userInfo) => ({ 
+export const updateUserInfo = (userInfo) => ({
   type: UPDATE_USER_INFO,
   payload: userInfo,
 });
@@ -60,7 +60,7 @@ export const loginUser = (email, password) => {
     dispatch(loginRequest());
 
     try {
-      const response = await axios.post('http://localhost:9000/api/login', {
+      const response = await axios.post('https://storebackend-2c94.onrender.com/api/login', {
         email,
         password,
       });
@@ -79,8 +79,8 @@ export const loginUser = (email, password) => {
 export const updateEmail = (userId, password, email) => {
   return async (dispatch) => {
     try {
-      const response = await axios.put('http://localhost:9000/api/updateEmail', {  userId, password, email});
-      dispatch({ type: EMAIL_UPDATED , payload: response.data });
+      const response = await axios.put('https://storebackend-2c94.onrender.com/api/updateEmail', { userId, password, email });
+      dispatch({ type: EMAIL_UPDATED, payload: response.data });
     } catch (error) {
       console.error('Error updating email:', error);
     }
@@ -90,8 +90,8 @@ export const updateEmail = (userId, password, email) => {
 export const updatePassword = (userId, password, newPassword) => {
   return async (dispatch) => {
     try {
-      const response = await axios.put('http://localhost:9000/api/updatePassword', { userId, password, newPassword });
-      dispatch({ type: PASSWORD_UPDATED , payload: response.data });
+      const response = await axios.put('https://storebackend-2c94.onrender.com/api/updatePassword', { userId, password, newPassword });
+      dispatch({ type: PASSWORD_UPDATED, payload: response.data });
     } catch (error) {
       console.error('Error updating password:', error);
     }

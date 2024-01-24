@@ -20,7 +20,7 @@ const ItemDetails = () => {
   useEffect(() => {
     const fetchProductData = async () => {
       try {
-        const response = await axios.get(`https://storebackend-etw3.onrender.com/api/shop/product/${productId}`);
+        const response = await axios.get(`https://storebackend-2c94.onrender.com/api/shop/product/${productId}`);
         const productData = response.data;
         setProductData(productData);
       } catch (error) {
@@ -83,7 +83,7 @@ const ItemDetails = () => {
       return;
     }
 
-    const response = await axios.get(`https://storebackend-etw3.onrender.com/api/size_id/${productId}/${selectedSize}`);
+    const response = await axios.get(`https://storebackend-2c94.onrender.com/api/size_id/${productId}/${selectedSize}`);
     const sizeId = response.data.product_size_id;
     //console.log(sizeId);
 

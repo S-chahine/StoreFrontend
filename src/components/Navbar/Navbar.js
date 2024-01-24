@@ -26,7 +26,7 @@ function Navbar() {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.get(`https://storebackend-etw3.onrender.com/api/products?search=${searchQuery}`);
+      const response = await axios.get(`https://storebackend-2c94.onrender.com/api/products?search=${searchQuery}`);
       const searchData = response.data;
       setSearchResults(searchData);
 

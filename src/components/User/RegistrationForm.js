@@ -47,7 +47,7 @@ const RegistrationForm = () => {
 
     try {
       // Make a POST request to your backend API with the registration data
-      const response = await axios.post('http://localhost:9000/api/register', {
+      const response = await axios.post('https://storebackend-2c94.onrender.com/api/register', {
         firstName,
         lastName,
         email,

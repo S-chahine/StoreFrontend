@@ -18,7 +18,7 @@ const Shop = () => {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get('https://storebackend-etw3.onrender.com/api/category');
+      const response = await axios.get('https://storebackend-2c94.onrender.com/api/category');
       setCategories(response.data);
     } catch (error) {
       console.error('Error fetching categories:', error);

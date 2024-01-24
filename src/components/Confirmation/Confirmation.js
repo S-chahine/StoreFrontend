@@ -27,7 +27,7 @@ const Confirmation = () => {
     const { user_id } = orderData;
     const fetchFirstName = async () => {
       try {
-        const response = await axios.get(`https://storebackend-etw3.onrender.com/api/user/${user_id}`);
+        const response = await axios.get(`https://storebackend-2c94.onrender.com/api/user/${user_id}`);
         const firstName = response.data.firstname;
         setFirstName(firstName);
       } catch (error) {

@@ -23,31 +23,31 @@ import './App.css';
 function App() {
   return (
     <Provider store={store}>
-    <Router>
-      <div className="App">
-        <div className="Header-Container">
-          <Header />
+      <Router>
+        <div className="App">
+          <div className="Header-Container">
+            <Header />
+          </div>
+          <div className="Content-Container">
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/shop" element={<Shop />} />
+              <Route path="/shop/products/:categoryId" element={<CategoryCard />} />
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="/search" element={<Search />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/cart" element={<ShoppingCart />} />
+              <Route path="/shop/product/:productId" element={<ItemDetails />} />
+              <Route path="/checkout" element={<CheckoutPage />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/orders/:userId" element={<Orders />} />
+              <Route path="/confirmation" element={<Confirmation />} />
+            </Routes>
+          </div>
         </div>
-        <div className="Content-Container">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/shop" element={<Shop />} />
-            <Route path="/shop/products/:categoryId" element={<CategoryCard />} />
-            <Route path="/about" element={<AboutUs />} />
-            <Route path="/search" element={<Search />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/cart" element={<ShoppingCart />} />
-            <Route path="/shop/product/:productId" element={<ItemDetails />} />
-            <Route path="/checkout" element={<CheckoutPage />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/orders/:userId" element={<Orders />} />
-            <Route path="/confirmation" element={<Confirmation />} />
-          </Routes>
-        </div>
-      </div>
-    </Router>
-    <ToastContainer />
+      </Router>
+      <ToastContainer />
     </Provider>
   );
 }

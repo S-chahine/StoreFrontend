@@ -75,7 +75,7 @@ const Dashboard = () => {
         updatedFields.firstname = updatedFields.firstname || user_info.firstname;
         updatedFields.lastname = updatedFields.lastname || user_info.lastname;
 
-        await axios.put(`https://storebackend-etw3.onrender.com/api/update?userId=${user_info.user_id}`, updatedFields);
+        await axios.put(`https://storebackend-2c94.onrender.com/api/update?userId=${user_info.user_id}`, updatedFields);
         dispatch(updateUserInfo(updatedFields));
       }
       setUpdateStatus('success');

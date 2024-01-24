@@ -55,7 +55,7 @@ const OrdersPage = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get(`https://storebackend-etw3.onrender.com/api/orders/${userId}`);
+        const response = await axios.get(`https://storebackend-2c94.onrender.com/api/orders/${userId}`);
         const ordersData = response.data;
 
         // Group order items by order ID
