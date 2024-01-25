@@ -10,9 +10,7 @@ const CheckoutPage = () => {
   const location = useLocation();
   const { cartItems } = location.state || { cartItems: [] };
 
-  // Retrieve the orderTotal from the first item in the cartItems array
-  //const orderTotal = cartItems.length > 0 ? cartItems[0].total : 0;
-  // Calculate the order total including tax for all items in the cart
+
   const orderTotal = cartItems.reduce((total, item) => total + parseFloat(item.total), 0).toFixed(2);
 
   const user = useSelector((state) => state.login.user || {});

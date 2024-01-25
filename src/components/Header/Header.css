@@ -1,13 +1,15 @@
-.container {
+.header-container {
   align-content: center;
 }
 
 header {
+  margin: 0px;
   display: flex;
   position: fixed;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 160px;
+  width: 100%;
 
 }
 
@@ -15,7 +17,8 @@ header img {
   display: block;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  height: 160px;
   width: 100%;
   background-color: white;
+
 }

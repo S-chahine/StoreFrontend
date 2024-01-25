@@ -1,18 +1,16 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 210px;
-  }
-  
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+}
 
-  .sale-image{
-    width: 600px; 
-    height: 800px;
-    object-fit:fill; 
-    margin-top: 210px;
-    
-  }
- 
- 
+
+.sale-image {
+  width: 40vw;
+  height: 70vh;
+  object-fit: fill;
+  margin-top: 210px;
+
+}

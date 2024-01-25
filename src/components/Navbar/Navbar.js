@@ -43,7 +43,7 @@ function Navbar() {
   }
 
   return (
-    <div className="container">
+    <div className="nav-container">
       <nav className="navbar">
         <ul className="hover">
           <li>

@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-.container {
+.nav-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,7 @@ body {
 
 .navbar {
   position: fixed;
-  margin-top: 80px;
+  margin-top: 162px;
   left: 0;
   width: 100%;
   height: 60px;
@@ -24,21 +24,27 @@ body {
   display: none;
   position: absolute;
   top: calc(100% + 4px);
-  right: 2; /* Position the message on the right side */
+  right: 2;
+  /* Position the message on the right side */
   padding: 4px;
   background-color: #f1f1f1;
   border-radius: 4px;
 }
+
 .navbar a.active {
-  color: #ffffff; /* Text color */
-  background-color: #eca083; /* Background color */
-  border-radius: 4px; /* Rounded corners */
-  padding: 8px 12px; /* Spacing around the link */
+  color: #ffffff;
+  /* Text color */
+  background-color: #eca083;
+  /* Background color */
+  border-radius: 4px;
+  /* Rounded corners */
+  padding: 8px 12px;
+  /* Spacing around the link */
 }
 
 
-.hovered + .message,
-.hovered:hover ~ .message {
+.hovered+.message,
+.hovered:hover~.message {
   display: block;
 }
 

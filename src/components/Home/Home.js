@@ -4,14 +4,14 @@ import promo from '../../public/assets/images/promotions/promotion.jpg';
 
 const Home = () => {
   return (
-    <div className='container'>
+    <div className='home-container'>
 
-    <img src={promo} className="sale-image" alt="Promotion" ></img>
-    
-    <a href="http://www.freepik.com">Designed by rawpixel.com / Freepik</a>
-       
-    
-  </div>
+      <img src={promo} className="sale-image" alt="Promotion" ></img>
+
+      <a href="http://www.freepik.com">Designed by rawpixel.com / Freepik</a>
+
+
+    </div>
   )
 }
 

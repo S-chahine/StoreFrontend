@@ -1,5 +1,31 @@
-body{
+body,
+h1,
+h2,
+h3,
+p,
+figure,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Your styles */
+body {
+  margin-top: 0px;
+}
+
+body {
   background-image: url('../src/public/assets/images/background/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 0px;
+}
+
+.App {
+  margin: 0px;
+}
+
+.Header-Container {
+  margin: 0px;
 }
