@@ -14,8 +14,8 @@
 
 .category-button,
 .item-button {
-  width: 300px;
-  height: 300px;
+  width: 22vw;
+  height: 38vh;
   display: inline-block;
   padding-top: 5px;
   padding-right: 5px;
@@ -49,12 +49,13 @@
 .item-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 5px;
+  gap: 15px;
+  margin-top: 228px;
 }
 
 .item-grid .item-image {
-  width: 300px;
-  height: 300px;
+  width: 22vw;
+  height: 32vh;
   object-fit: cover;
   border-radius: 20%;
 

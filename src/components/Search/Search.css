@@ -14,8 +14,8 @@
 
 .category-button,
 .item-button {
-  width: 300px;
-  height: 320px;
+  width: 22vw;
+  height: 38vh;
   display: inline-block;
   padding-top: 5px;
   padding-right: 5px;
@@ -28,9 +28,7 @@
   color: #333;
   font-size: 14px;
   transition: background-color 0.3s ease;
-  margin-top: 150px;
-
-
+  margin-top: 10px;
 }
 
 .category-button:hover,
@@ -53,8 +51,8 @@
 }
 
 .item-grid .item-image {
-  width: 300px;
-  height: 300px;
+  width: 22vw;
+  height: 32vh;
   object-fit: cover;
   border-radius: 20%;
 
