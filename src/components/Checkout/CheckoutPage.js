@@ -120,7 +120,7 @@ const CheckoutPage = () => {
 
   return (
     <div className="checkout-container">
-      <div className="h2">
+      <div className="checkout-h2">
         <h2>Checkout</h2>
       </div>
       <div className="checkout-page">

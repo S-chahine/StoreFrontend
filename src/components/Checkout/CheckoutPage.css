@@ -1,77 +1,80 @@
-.checkout-container{
+.checkout-container {
   text-align: left;
 }
-.h2{
-    margin-top: 180px;
-    text-align: left;
-    margin-left:0;
-    
+
+.checkout-h2 {
+  margin-top: 240px;
+  text-align: left;
+  margin-left: 0px;
+
 }
+
 .checkout-page {
-    max-width: 1400px;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    display: flex;    
-  }
-  
-  .checkout-page h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .checkout-form {
-    width: 700px;
-    display: flex;
-    padding: 15px;
-    flex-direction: column;
-  }
-  
-  .checkout-form label {
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  .checkout-form input[type="text"],
-  .checkout-form input[type="email"],
-  .checkout-form select {
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  .checkout-form button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .checkout-form button:hover {
-    background-color: #0056b3;
-  }
-  
-  .checkout-summary {
-    margin-top: 40px;
-    width: 700px;
-    height: 300px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .checkout-summary p {
-    margin-bottom: 10px;
-  }
-  
-  .checkout-summary .total-price {
-    font-weight: bold;
-  }
-.payment{
-    width: 300px;
+  max-width: 1400px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  display: flex;
+}
+
+.checkout-page h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.checkout-form {
+  width: 700px;
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+}
+
+.checkout-form label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.checkout-form input[type="text"],
+.checkout-form input[type="email"],
+.checkout-form select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.checkout-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checkout-form button:hover {
+  background-color: #0056b3;
+}
+
+.checkout-summary {
+  margin-top: 40px;
+  width: 700px;
+  height: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkout-summary p {
+  margin-bottom: 10px;
+}
+
+.checkout-summary .total-price {
+  font-weight: bold;
+}
+
+.payment {
+  width: 300px;
 }

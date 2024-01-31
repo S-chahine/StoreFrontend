@@ -69,7 +69,7 @@ const CartPage = () => {
   return (
     <>
       <ToastContainer />
-      <div className="h2">
+      <div className="cart-h2">
         <h2>Shopping Cart</h2>
       </div>
       <div className="cart-container">

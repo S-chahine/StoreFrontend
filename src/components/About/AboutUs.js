@@ -4,9 +4,7 @@ import './AboutUs.css';
 const AboutUsPage = () => {
   return (
     <div className="aboutus-container">
-      <div className='aboutus-header'>
-        <h1>About Us</h1>
-      </div>
+
       <div className='aboutus-main'>
         <div className='aboutus-section'>
           <h2>Welcome to Our Store</h2>
