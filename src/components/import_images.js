@@ -1,9 +1,9 @@
-import basics from '../public/assets/images/categories/basics.jpg';
-import outerwear from '../public/assets/images/categories/outerwear.jpg';
-import tops from '../public/assets/images/categories/tops.jpg';
-import dresses from '../public/assets/images/categories/dresses.jpg';
-import skirts from '../public/assets/images/categories/skirts.jpg';
-import pants from '../public/assets/images/categories/pants.jpg';
+import basics from '../public/assets/images/categories/basics.webp';
+import outerwear from '../public/assets/images/categories/outerwear.webp';
+import tops from '../public/assets/images/categories/tops.webp';
+import dresses from '../public/assets/images/categories/dresses.webp';
+import skirts from '../public/assets/images/categories/skirts.webp';
+import pants from '../public/assets/images/categories/pants.webp';
 
 export const import_images = (imageURL) => {
   switch (imageURL) {

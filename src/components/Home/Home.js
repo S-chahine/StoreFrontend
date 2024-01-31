@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css';
-import promo from '../../public/assets/images/promotions/promotion.jpg';
+import promo from '../../public/assets/images/promotions/promotion.webp';
 
 const Home = () => {
   return (

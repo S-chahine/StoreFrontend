@@ -16,7 +16,7 @@ body {
 }
 
 body {
-  background-image: url('../src/public/assets/images/background/background.jpg');
+  background-image: url('../src/public/assets/images/background/background.webp');
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0px;

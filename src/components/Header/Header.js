@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../public/assets/images/icons/logo.jpg';
+import logo from '../../public/assets/images/icons/logo.webp';
 import './Header.css';
 
 const Header = () => {
